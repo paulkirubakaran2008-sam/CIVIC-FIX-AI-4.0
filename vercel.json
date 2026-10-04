@@ -1,0 +1,9 @@
+{
+  "functions": {
+    "api/index.py": {
+      "includeFiles": "{api/model.joblib,dataset.csv}",
+      "maxDuration": 15
+    }
+  },
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/index.py" }]
+}
